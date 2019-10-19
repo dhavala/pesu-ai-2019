@@ -18,21 +18,11 @@ A compund explanation can be represented as
 
 When a label is known, that observation can be stated with an implication
 
-(L, 1, 0.5) ^ (R, 1, 0.5) ==> 0
+(L, 1, 0.5) ^ (R, 2, -0.5) ==> 0
 
 If you only look at the "relations", it looks a like a sequence. [L,R]. We have a built an RNN that, produces such sequences. 
 
-You can use the following function to produce a sequence (one character at a time)
-
-# initialite the curr_char state
-curr_char=[1,0,0,0]
-feature_embedding = # for a given record, load the feature_embedding
-# EOS is end-of-sequence. When True, reached end-of-sentence.
-EOS = False
-while !EOS:
-	next_char, prob, EOS  = predict_next(feature_embedding, curr_char=[1,0,0,0])
-	curr_char = next_char
-	#  flag is False
+Please see ./predict.py for an example
 
 
 Problem

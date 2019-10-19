@@ -18,7 +18,7 @@ A compund explanation can be represented as
 
 When a label is known, that observation can be stated with an implication
 
-(L, 1, 0.5) ^ (R, 1, 0.5) ==> 0
+(L, 1, 0.5) ^ (R, 2, -0.5) ==> 0
 
 which translates to
 
